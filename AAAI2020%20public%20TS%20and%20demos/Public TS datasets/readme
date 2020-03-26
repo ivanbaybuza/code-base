@@ -1,0 +1,15 @@
+traffic_big.npy:   (731, 862)  (T, N) 2015-2016 每天的 road occupancy rate
+traffic_small.npy:  (80, 228) (T, N) 
+ele_big.npy:      (1096, 321) (T, N) (2012-2014每天的用电量) 
+ele_small.npy:    (200, 321)  (T, N)
+ushcn.npy:       (95, 1218, 12, 4) (year, state_id, month, tmax/tmin/tavg/prcp)
+exchange.npy:     (7588, 8) (T, N)  1990-2016, [800:1200]比较平稳
+commodity.npy:    (572, 1902) (T, N) 2015-10-27 2017-5-20     
+PC_M.npy:       (25, 9) (T, N)    201703, 201903
+PC_W.npy:       (105, 9) (T, N)   201709, 201909
+smoke1.npy:      (360, 640, 869) (Height, Width, T) smoke视频对应的灰度图片数组
+
+
+读取：
+with open(filename, 'rb') as file：
+    data = pickle.load(file)
